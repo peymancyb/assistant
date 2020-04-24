@@ -1,0 +1,110 @@
+@import "./brand-colors.scss";
+
+@mixin flexCenter($direction: column) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin textSize($size) {
+  font-size: $size;
+}
+
+.flex-center {
+  @include flexCenter();
+}
+
+.flex-center-row {
+  @include flexCenter(row);
+}
+
+.text-small {
+  @include textSize(12px);
+}
+
+.text-medium {
+  @include textSize(18px);
+}
+
+.text-large {
+  @include textSize(32px);
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.text-input {
+  background-color: $solitude;
+  width: 350px;
+  height: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.text-input-left {
+  @extend .text-input;
+  text-align: left;
+}
+
+.text-input-center {
+  @extend .text-input;
+  text-align: center;
+}
+
+.small-input {
+  max-width: 155px;
+}
+
+.button-primary {
+  background-color: $mountain_meadow;
+  border-radius: 20px;
+  color: white;
+}
+
+.button-secondary {
+  background-color: $solitude;
+  border-radius: 10px;
+}
+
+.button-tertiary {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  -webkit-box-shadow: 1px 2px 29px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 29px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 29px -11px rgba(0, 0, 0, 0.75);
+  height: 55px;
+}
+
+.btn-small {
+  width: 140px;
+  height: 40px;
+}
+
+.btn-medium {
+  width: 190px;
+  height: 40px;
+}
+
+.btn-large {
+  width: 390px;
+  height: 50px;
+}

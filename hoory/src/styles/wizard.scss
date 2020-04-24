@@ -1,0 +1,40 @@
+@import "./brand-colors.scss";
+
+.wizard-layout {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 2;
+  background-color: $neon_blue;
+  justify-content: center;
+  align-items: center;
+}
+
+.wizard-content {
+  display: flex;
+  flex: 8;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create-account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.congratulation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40vh;
+  max-width: 35vw;
+}

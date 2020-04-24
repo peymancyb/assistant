@@ -1,0 +1,30 @@
+@import "./common.scss";
+
+.login-container {
+  @include flexCenter();
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-content {
+  display: flex;
+  min-width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 55vh;
+}
+
+.google-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.login-footer {
+  position: absolute;
+  bottom: 0px;
+  height: 10px;
+  background-color: #673efb;
+  width: 100vw;
+}
